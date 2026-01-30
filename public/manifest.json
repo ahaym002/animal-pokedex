@@ -1,0 +1,17 @@
+{
+  "name": "Animal Pokedex",
+  "short_name": "Pokedex",
+  "description": "Capture and collect real animals like Pokemon!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#DC0A2D",
+  "theme_color": "#DC0A2D",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

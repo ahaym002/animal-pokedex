@@ -1,0 +1,366 @@
+import { Animal } from '@/types/animal';
+
+export const animalDatabase: Record<string, Omit<Animal, 'id' | 'capturedAt' | 'imageData'>> = {
+  dog: {
+    name: 'Dog',
+    scientificName: 'Canis lupus familiaris',
+    type: 'mammal',
+    habitat: 'Domestic, worldwide',
+    diet: 'Omnivore',
+    lifespan: '10-13 years',
+    size: 'Small to Large (15-80 cm)',
+    rarity: 'common',
+    funFacts: [
+      'Dogs have a sense of smell 40x better than humans',
+      'A dog\'s nose print is unique, like a human fingerprint',
+      'Dogs can learn more than 1000 words',
+    ],
+    stats: { speed: 75, strength: 60, intelligence: 80, cuteness: 95, stealth: 40 },
+  },
+  cat: {
+    name: 'Cat',
+    scientificName: 'Felis catus',
+    type: 'mammal',
+    habitat: 'Domestic, worldwide',
+    diet: 'Carnivore',
+    lifespan: '12-18 years',
+    size: 'Small (23-25 cm)',
+    rarity: 'common',
+    funFacts: [
+      'Cats spend 70% of their lives sleeping',
+      'A group of cats is called a clowder',
+      'Cats can rotate their ears 180 degrees',
+    ],
+    stats: { speed: 70, strength: 40, intelligence: 75, cuteness: 100, stealth: 95 },
+  },
+  bird: {
+    name: 'Sparrow',
+    scientificName: 'Passer domesticus',
+    type: 'bird',
+    habitat: 'Urban areas, gardens, farms',
+    diet: 'Omnivore (seeds, insects)',
+    lifespan: '3-5 years',
+    size: 'Small (14-16 cm)',
+    rarity: 'common',
+    funFacts: [
+      'Sparrows can fly up to 50 km/h',
+      'They dust bathe to keep their feathers clean',
+      'Sparrows have been on Earth for 100 million years',
+    ],
+    stats: { speed: 80, strength: 20, intelligence: 50, cuteness: 75, stealth: 60 },
+  },
+  rabbit: {
+    name: 'Rabbit',
+    scientificName: 'Oryctolagus cuniculus',
+    type: 'mammal',
+    habitat: 'Meadows, forests, domestic',
+    diet: 'Herbivore',
+    lifespan: '8-12 years',
+    size: 'Small to Medium (20-50 cm)',
+    rarity: 'common',
+    funFacts: [
+      'Rabbits can see 360 degrees',
+      'A rabbit\'s teeth never stop growing',
+      'They can jump up to 90 cm high',
+    ],
+    stats: { speed: 85, strength: 25, intelligence: 55, cuteness: 98, stealth: 70 },
+  },
+  squirrel: {
+    name: 'Squirrel',
+    scientificName: 'Sciuridae',
+    type: 'mammal',
+    habitat: 'Forests, parks, urban areas',
+    diet: 'Omnivore (nuts, seeds, insects)',
+    lifespan: '5-10 years',
+    size: 'Small (15-30 cm)',
+    rarity: 'common',
+    funFacts: [
+      'Squirrels can jump 10 times their body length',
+      'They plant thousands of trees by forgetting where they buried nuts',
+      'Their front teeth grow 6 inches per year',
+    ],
+    stats: { speed: 85, strength: 30, intelligence: 65, cuteness: 88, stealth: 75 },
+  },
+  fox: {
+    name: 'Fox',
+    scientificName: 'Vulpes vulpes',
+    type: 'mammal',
+    habitat: 'Forests, mountains, urban areas',
+    diet: 'Omnivore',
+    lifespan: '3-4 years (wild)',
+    size: 'Medium (45-90 cm)',
+    rarity: 'uncommon',
+    funFacts: [
+      'Foxes can hear a watch ticking from 40 yards away',
+      'They use Earth\'s magnetic field to hunt',
+      'A fox\'s tail is called a brush',
+    ],
+    stats: { speed: 90, strength: 50, intelligence: 85, cuteness: 90, stealth: 95 },
+  },
+  deer: {
+    name: 'Deer',
+    scientificName: 'Cervidae',
+    type: 'mammal',
+    habitat: 'Forests, grasslands',
+    diet: 'Herbivore',
+    lifespan: '10-15 years',
+    size: 'Large (100-150 cm)',
+    rarity: 'uncommon',
+    funFacts: [
+      'Deer can jump up to 3 meters high',
+      'Male deer grow new antlers every year',
+      'They have excellent night vision',
+    ],
+    stats: { speed: 95, strength: 70, intelligence: 60, cuteness: 85, stealth: 80 },
+  },
+  owl: {
+    name: 'Owl',
+    scientificName: 'Strigiformes',
+    type: 'bird',
+    habitat: 'Forests, deserts, tundra',
+    diet: 'Carnivore',
+    lifespan: '5-25 years',
+    size: 'Small to Large (13-70 cm)',
+    rarity: 'rare',
+    funFacts: [
+      'Owls can rotate their heads 270 degrees',
+      'They have asymmetrical ears for better sound location',
+      'Owls fly almost silently',
+    ],
+    stats: { speed: 65, strength: 55, intelligence: 90, cuteness: 88, stealth: 100 },
+  },
+  snake: {
+    name: 'Snake',
+    scientificName: 'Serpentes',
+    type: 'reptile',
+    habitat: 'Various (forests, deserts, water)',
+    diet: 'Carnivore',
+    lifespan: '10-30 years',
+    size: 'Small to Large (10 cm - 7 m)',
+    rarity: 'uncommon',
+    funFacts: [
+      'Snakes smell with their tongues',
+      'They can go months without eating',
+      'Some species can fly (glide) through the air',
+    ],
+    stats: { speed: 50, strength: 65, intelligence: 45, cuteness: 35, stealth: 95 },
+  },
+  turtle: {
+    name: 'Turtle',
+    scientificName: 'Testudines',
+    type: 'reptile',
+    habitat: 'Water, land (various)',
+    diet: 'Omnivore',
+    lifespan: '20-100+ years',
+    size: 'Small to Large (10 cm - 2 m)',
+    rarity: 'uncommon',
+    funFacts: [
+      'Turtles have been around for 200 million years',
+      'They can feel through their shells',
+      'Some turtles can breathe through their butts',
+    ],
+    stats: { speed: 15, strength: 80, intelligence: 40, cuteness: 75, stealth: 60 },
+  },
+  butterfly: {
+    name: 'Butterfly',
+    scientificName: 'Lepidoptera',
+    type: 'insect',
+    habitat: 'Gardens, meadows, forests',
+    diet: 'Nectar',
+    lifespan: '2-4 weeks',
+    size: 'Small (1-12 cm wingspan)',
+    rarity: 'common',
+    funFacts: [
+      'Butterflies taste with their feet',
+      'They can see ultraviolet light',
+      'Monarch butterflies migrate 3000 miles',
+    ],
+    stats: { speed: 35, strength: 5, intelligence: 20, cuteness: 85, stealth: 45 },
+  },
+  horse: {
+    name: 'Horse',
+    scientificName: 'Equus ferus caballus',
+    type: 'mammal',
+    habitat: 'Grasslands, domestic',
+    diet: 'Herbivore',
+    lifespan: '25-30 years',
+    size: 'Large (140-180 cm)',
+    rarity: 'uncommon',
+    funFacts: [
+      'Horses can sleep standing up',
+      'They have the largest eyes of any land mammal',
+      'Horses can run within hours after birth',
+    ],
+    stats: { speed: 100, strength: 95, intelligence: 70, cuteness: 80, stealth: 20 },
+  },
+  eagle: {
+    name: 'Eagle',
+    scientificName: 'Aquila',
+    type: 'bird',
+    habitat: 'Mountains, forests, coasts',
+    diet: 'Carnivore',
+    lifespan: '20-30 years',
+    size: 'Large (70-100 cm)',
+    rarity: 'rare',
+    funFacts: [
+      'Eagles can spot prey from 3 km away',
+      'Their grip is 10x stronger than humans',
+      'They can fly at 160 km/h',
+    ],
+    stats: { speed: 100, strength: 90, intelligence: 85, cuteness: 70, stealth: 75 },
+  },
+  frog: {
+    name: 'Frog',
+    scientificName: 'Anura',
+    type: 'amphibian',
+    habitat: 'Wetlands, ponds, forests',
+    diet: 'Carnivore (insects)',
+    lifespan: '3-15 years',
+    size: 'Small (1-30 cm)',
+    rarity: 'common',
+    funFacts: [
+      'Frogs drink water through their skin',
+      'Some frogs can freeze and come back to life',
+      'The golden poison frog can kill 10 adults',
+    ],
+    stats: { speed: 65, strength: 20, intelligence: 30, cuteness: 70, stealth: 80 },
+  },
+  wolf: {
+    name: 'Wolf',
+    scientificName: 'Canis lupus',
+    type: 'mammal',
+    habitat: 'Forests, tundra, mountains',
+    diet: 'Carnivore',
+    lifespan: '6-8 years (wild)',
+    size: 'Large (105-160 cm)',
+    rarity: 'rare',
+    funFacts: [
+      'Wolves can hear sounds up to 10 miles away',
+      'They can run 40+ mph',
+      'A wolf pack can take down prey 10x their size',
+    ],
+    stats: { speed: 95, strength: 90, intelligence: 95, cuteness: 75, stealth: 90 },
+  },
+  dolphin: {
+    name: 'Dolphin',
+    scientificName: 'Delphinidae',
+    type: 'marine',
+    habitat: 'Oceans, coastal waters',
+    diet: 'Carnivore (fish, squid)',
+    lifespan: '20-50 years',
+    size: 'Large (1.5-4 m)',
+    rarity: 'rare',
+    funFacts: [
+      'Dolphins sleep with one eye open',
+      'They can hold their breath for 20 minutes',
+      'Each dolphin has a unique whistle',
+    ],
+    stats: { speed: 95, strength: 75, intelligence: 100, cuteness: 95, stealth: 50 },
+  },
+  penguin: {
+    name: 'Penguin',
+    scientificName: 'Spheniscidae',
+    type: 'bird',
+    habitat: 'Antarctic, Southern Hemisphere',
+    diet: 'Carnivore (fish, krill)',
+    lifespan: '15-20 years',
+    size: 'Medium (30-115 cm)',
+    rarity: 'rare',
+    funFacts: [
+      'Penguins can drink salt water',
+      'They propose with pebbles',
+      'Emperor penguins can dive 500m deep',
+    ],
+    stats: { speed: 55, strength: 45, intelligence: 70, cuteness: 100, stealth: 40 },
+  },
+  lion: {
+    name: 'Lion',
+    scientificName: 'Panthera leo',
+    type: 'mammal',
+    habitat: 'African savannas, grasslands',
+    diet: 'Carnivore',
+    lifespan: '10-14 years',
+    size: 'Large (170-250 cm)',
+    rarity: 'legendary',
+    funFacts: [
+      'A lion\'s roar can be heard 8 km away',
+      'They sleep up to 20 hours a day',
+      'Lions are the only cats that live in groups',
+    ],
+    stats: { speed: 80, strength: 100, intelligence: 75, cuteness: 60, stealth: 85 },
+  },
+  tiger: {
+    name: 'Tiger',
+    scientificName: 'Panthera tigris',
+    type: 'mammal',
+    habitat: 'Asian forests, grasslands',
+    diet: 'Carnivore',
+    lifespan: '10-15 years',
+    size: 'Large (200-330 cm)',
+    rarity: 'legendary',
+    funFacts: [
+      'No two tigers have the same stripes',
+      'Tigers can leap up to 9 meters',
+      'They\'re the largest wild cat species',
+    ],
+    stats: { speed: 90, strength: 100, intelligence: 80, cuteness: 65, stealth: 95 },
+  },
+  panda: {
+    name: 'Giant Panda',
+    scientificName: 'Ailuropoda melanoleuca',
+    type: 'mammal',
+    habitat: 'Chinese mountain forests',
+    diet: 'Herbivore (bamboo)',
+    lifespan: '20 years',
+    size: 'Large (120-150 cm)',
+    rarity: 'legendary',
+    funFacts: [
+      'Pandas eat for 12 hours a day',
+      'They have a pseudo-thumb for gripping bamboo',
+      'Baby pandas are born pink and blind',
+    ],
+    stats: { speed: 30, strength: 85, intelligence: 60, cuteness: 100, stealth: 50 },
+  },
+  elephant: {
+    name: 'Elephant',
+    scientificName: 'Elephantidae',
+    type: 'mammal',
+    habitat: 'African/Asian savannas, forests',
+    diet: 'Herbivore',
+    lifespan: '60-70 years',
+    size: 'Massive (250-400 cm)',
+    rarity: 'legendary',
+    funFacts: [
+      'Elephants are the only animals that can\'t jump',
+      'They can hear through their feet',
+      'An elephant\'s trunk has 40,000 muscles',
+    ],
+    stats: { speed: 45, strength: 100, intelligence: 95, cuteness: 85, stealth: 10 },
+  },
+};
+
+export function getAnimalByKeyword(keyword: string): Omit<Animal, 'id' | 'capturedAt' | 'imageData'> | null {
+  const normalizedKeyword = keyword.toLowerCase().trim();
+  
+  // Direct match
+  if (animalDatabase[normalizedKeyword]) {
+    return animalDatabase[normalizedKeyword];
+  }
+  
+  // Search by name
+  for (const [key, animal] of Object.entries(animalDatabase)) {
+    if (animal.name.toLowerCase().includes(normalizedKeyword) ||
+        normalizedKeyword.includes(animal.name.toLowerCase())) {
+      return animal;
+    }
+  }
+  
+  // Search by scientific name
+  for (const animal of Object.values(animalDatabase)) {
+    if (animal.scientificName.toLowerCase().includes(normalizedKeyword)) {
+      return animal;
+    }
+  }
+  
+  return null;
+}
